@@ -1,0 +1,6 @@
+@import "https://flameui.netlify.app/components.css";
+.nav-bar-color .nav-bar {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}

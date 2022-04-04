@@ -1,0 +1,14 @@
+@import "https://flameui.netlify.app/components.css";
+
+.product-card-component .e-commerce-card {
+  color: var(--secondary-color);
+  height: 45rem;
+  width: 32rem;
+  padding: 2rem;
+}
+
+.product-card-component .rate-review {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
