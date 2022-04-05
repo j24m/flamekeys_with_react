@@ -1,0 +1,13 @@
+.main-product-listing {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  gap: 2rem;
+  margin-top: 18rem;
+}
+
+.productcards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
