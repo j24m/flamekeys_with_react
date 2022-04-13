@@ -2,13 +2,49 @@
 
 .product-card-component .e-commerce-card {
   color: var(--secondary-color);
-  height: 45rem;
-  width: 32rem;
-  padding: 2rem;
+  color: var(--text-gray-color);
+  position: relative;
+  box-shadow: 0px 2px 4px var(--text-gray-color),
+    0px 4px 8px var(--text-gray-color);
 }
 
-.product-card-component .rate-review {
+.product-card-component .rating-wishlist-flex {
   display: flex;
-  justify-content: center;
-  align-items: baseline;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.product-card-component .total-price {
+  color: var(--dark-color);
+}
+
+.product-card-component .discount-price {
+  color: var(--green-shade-color2);
+}
+
+.btn-dismiss {
+  color: var(--secondary-color);
+  font-size: 2rem;
+}
+
+.product-card-component .heart-icon {
+  position: absolute;
+  right: 1rem;
+  bottom: 9.1rem;
+}
+
+.product-card-component .heart-icon:hover,
+.btn-dismiss:hover {
+  transform: scale(1.1);
+}
+
+.btn-dismiss {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+}
+
+.product-card-component .outofstock-badge {
+  color: var(--secondary-color);
 }

@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 2fr 8fr;
   gap: 2rem;
-  margin-top: 18rem;
+  margin-top: 11rem;
 }
 
 .productcards-container {

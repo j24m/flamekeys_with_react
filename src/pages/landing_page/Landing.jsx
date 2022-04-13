@@ -12,7 +12,7 @@ const Landing = (props) => {
       <div className="caption-content1">
         <h1 className="homepage-img-title">DUCKY RGB TKL-WHITE KEYBOARD</h1>
         <h2>MORE PRODUCTS</h2>
-        <Link className="caption-link" to="./single-product.html">
+        <Link className="caption-link" to="/productcategory">
           ORDER NOW
         </Link>
       </div>

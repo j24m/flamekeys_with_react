@@ -11,21 +11,38 @@ const Sidebar = () => {
       <div className="parent-of-sidebar-product-container">
         <div className="sidebar-products-container">
           <div className="sidebar-margin-top sidebar-container">
-            <h1 className="filter-heading">FILTER</h1>
-            <div className="slider-container">
-              <input
-                onChange={sliderRange}
-                id="range-slider"
-                className="slider"
-                type="range"
-                name="slider"
-                min="0"
-                max="5000"
-              />
-              <p id="range-value">{range}</p>
+            <div className="filter-reset-flex">
+              <h1 className="filter-heading">FILTER</h1>
+              <button className="btn btn-secondary btn-reset">Reset</button>
             </div>
-            <h2 className="sidebar-cmp-heading">CATEGORY</h2>
             <ul className="ul">
+              <h2 className="sidebar-cmp-heading">Sort by</h2>
+              <li className="sort-by">
+                <input type="radio" name="sort" id="High_to_Low" />
+                <label htmlFor="High_to_Low"> High to low</label>
+              </li>
+              <li className="sort-by">
+                <input type="radio" name="sort" id="Low_to_High" />
+                <label htmlFor="Low_to_High"> Low to high</label>
+              </li>
+            </ul>
+            <ul className="ul">
+              <h2 className="sidebar-cmp-heading">Price</h2>
+              <div className="slider-container">
+                <input
+                  onChange={sliderRange}
+                  id="range-slider"
+                  className="slider"
+                  type="range"
+                  name="slider"
+                  min="0"
+                  max="15000"
+                />
+                <p id="range-value">{range}</p>
+              </div>
+            </ul>
+            <ul className="ul">
+              <h2 className="sidebar-cmp-heading">Category</h2>
               <li>
                 <div className="checkbox-input">
                   <input id="keyboard" type="checkbox" name="check" />
@@ -41,12 +58,18 @@ const Sidebar = () => {
               <li>
                 <div className="checkbox-input">
                   <input id="keycaps" type="checkbox" name="check" />
-                  <label htmlFor="keycaps">KeyCaps</label>
+                  <label htmlFor="keycaps">Key Caps</label>
+                </div>
+              </li>
+              <li>
+                <div className="checkbox-input">
+                  <input id="keycaps" type="checkbox" name="check" />
+                  <label htmlFor="keycaps">Mouse Pads</label>
                 </div>
               </li>
             </ul>
             <ul className="ul">
-              <h2 className="sidebar-cmp-heading">BRANDS</h2>
+              <h2 className="sidebar-cmp-heading">Brands</h2>
               <li>
                 <div className="checkbox-input">
                   <input id="brand-1" type="checkbox" name="check" />
@@ -56,21 +79,33 @@ const Sidebar = () => {
               <li>
                 <div className="checkbox-input">
                   <input id="brand-2" type="checkbox" name="check" />
-                  <label htmlFor="brand-2">Zebronics</label>
+                  <label htmlFor="brand-2">Royal Kludge</label>
                 </div>
               </li>
               <li>
                 <div className="checkbox-input">
                   <input id="brand-3" type="checkbox" name="check" />
-                  <label htmlFor="brand-3">Logitech</label>
+                  <label htmlFor="brand-3">Hello Ganss</label>
+                </div>
+              </li>
+              <li>
+                <div className="checkbox-input">
+                  <input id="brand-4" type="checkbox" name="check" />
+                  <label htmlFor="brand-4">Glorious model</label>
+                </div>
+              </li>
+              <li>
+                <div className="checkbox-input">
+                  <input id="brand-4" type="checkbox" name="check" />
+                  <label htmlFor="brand-4">Varmilo</label>
                 </div>
               </li>
             </ul>
             <ul className="ul">
               <h2 className="sidebar-cmp-heading">Avg. Rating</h2>
               <li className="star-symbol">
-                <input type="radio" id="4Stars & above" name="ratings" />
-                <label htmlFor="4Stars & above">
+                <input type="radio" id="5Stars & above" name="ratings" />
+                <label htmlFor="5Stars & above">
                   <strong> ✰✰✰✰✰ </strong>
                 </label>
               </li>
@@ -100,9 +135,6 @@ const Sidebar = () => {
               </li>
             </ul>
             <ul className="ul">
-              <h2 className="sidebar-cmp-heading">Price</h2>
-            </ul>
-            <ul className="ul">
               <h2 className="sidebar-cmp-heading">Discount</h2>
               <li>
                 <div className="checkbox-input">
@@ -115,29 +147,6 @@ const Sidebar = () => {
                   <input id="off-by-25" type="checkbox" name="check" />
                   <label htmlFor="off-by-25">25% Off or more</label>
                 </div>
-              </li>
-              <li>
-                <div className="checkbox-input">
-                  <input id="off-by-35" type="checkbox" name="check" />
-                  <label htmlFor="off-by-35">35% Off or more</label>
-                </div>
-              </li>
-              <li>
-                <div className="checkbox-input">
-                  <input id="off-by-50" type="checkbox" name="check" />
-                  <label htmlFor="off-by-50">50% Off or more</label>
-                </div>
-              </li>
-            </ul>
-            <ul className="ul">
-              <h2 className="sidebar-cmp-heading">Sort by</h2>
-              <li>
-                <input type="radio" name="sort" id="High_to_Low" />
-                <label htmlFor="High_to_Low"> High to low</label>
-              </li>
-              <li>
-                <input type="radio" name="sort" id="Low_to_High" />
-                <label htmlFor="Low_to_High"> Low to high</label>
               </li>
             </ul>
           </div>

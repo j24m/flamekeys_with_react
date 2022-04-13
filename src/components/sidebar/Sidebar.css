@@ -12,11 +12,12 @@
 .parent-of-sidebar-product-container
   .sidebar-products-container
   .sidebar-container {
-  min-width: 25rem;
+  min-width: 30rem;
   padding: 0 3rem;
   border-right: 1px solid var(--button-floatHover-color);
   width: 20%;
   margin-left: 1rem;
+  margin-right: 3.5rem;
 }
 
 .parent-of-sidebar-product-container
@@ -25,8 +26,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 1rem;
-  flex: 6;
+  flex: 5;
   padding: 0 2rem 0 3rem;
   height: auto;
   gap: 5rem;
@@ -55,9 +55,11 @@
   justify-content: flex-start;
 }
 
-.checkbox-input input:hover,
-.checkbox-input label:hover {
-  cursor: pointer;
+.filter-reset-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
 }
 
 .slider-container {
@@ -71,6 +73,7 @@
 }
 
 .slider {
+  cursor: pointer;
   -webkit-appearance: none;
   min-width: 90%;
   height: 0.7rem;
@@ -86,4 +89,13 @@
   border-radius: 50%;
   border: 1px solid var(--button-floatHover-color);
   background-color: #eaece5;
+}
+
+.checkbox-input input:hover,
+.checkbox-input label:hover,
+.parent-of-sidebar-product-container .star-symbol input,
+.parent-of-sidebar-product-container .star-symbol label,
+.sort-by input,
+.sort-by label {
+  cursor: pointer;
 }

@@ -1,6 +1,7 @@
 import "./Header.css";
 import { RadixIconsKeyboard } from "../../assets/Icons";
 import { PhShoppingCartSimpleBold } from "../../assets/Icons";
+import { PhUserCircleLight } from "../../assets/Icons.jsx";
 import { PhHeartBold } from "../../assets/Icons";
 import pingu from "../../assets/images/pingu.jpg";
 import React from "react";
@@ -32,25 +33,25 @@ const Header = (props) => {
               </label>
             </div>
             <Link className="homepage-nav-links" to="/productcategory">
-              <div>OUR PRODUCTS</div>
+              <div>Our Products</div>
             </Link>
 
             <Link className="homepage-nav-links" to="/cart">
-              <PhShoppingCartSimpleBold transform="scale(1.1)" color="white" />
+              Cart
             </Link>
 
             <Link className="homepage-nav-links" to="/wishlist">
-              <PhHeartBold color="white" />
+              Wishlist
             </Link>
 
             <Link className="homepage-nav-links" to="/login_signup">
-              <div>LOGIN</div>
+              <div>Login</div>
             </Link>
 
             {/* <!-- Avatar --> */}
             <Link to="/home">
-              <div className="avatar avatar-sm">
-                <img src={pingu} alt="penguin-w-headphones" />
+              <div className="">
+                <PhUserCircleLight></PhUserCircleLight>
               </div>
             </Link>
           </div>
