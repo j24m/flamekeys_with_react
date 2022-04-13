@@ -12,8 +12,8 @@ const ProductCard = ({ product }) => {
         <div className="product-card-container">
           <div className="e-commerce-card">
             {outOfStock ? (
-              <div class="disable-card">
-                <h3 class="outofstock-badge">Out Of Stock</h3>
+              <div className="disable-card">
+                <h3 className="outofstock-badge">Out Of Stock</h3>
               </div>
             ) : (
               <div className="badge-on-card">{discount}% Off</div>

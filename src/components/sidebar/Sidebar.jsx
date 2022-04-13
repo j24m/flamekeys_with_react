@@ -1,8 +1,8 @@
 import "./Sidebar.css";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 
 const Sidebar = () => {
-  const [range, setRange] = useState("0");
+  const [range, setRange] = useState(0);
   const sliderRange = (e) => {
     setRange(e.target.value);
   };

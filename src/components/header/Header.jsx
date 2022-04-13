@@ -12,7 +12,7 @@ const Header = (props) => {
     <div>
       <div className="nav-bar-color home-page-container">
         <div className="nav-bar">
-          <Link className="homepage-nav-links" to="/">
+          <Link className="homepage-nav-links" to="/home">
             <div className="homepage-nav-logo">
               <div>FlameKeys</div>
               <RadixIconsKeyboard color="white" />

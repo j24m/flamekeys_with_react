@@ -10,9 +10,8 @@ import Mockman from "mockman-js";
 const Routing = () => {
   return (
     <>
-      {/* <Router> */}
       <Routes>
-        <Route path="/" element={<Landing />} />
+        <Route path="/home" element={<Landing />} />
         <Route path="/productcategory" element={<ProductCategory />} />
         <Route path="/products" element={<Products />} />
         <Route path="/cart" element={<Cart />} />
@@ -20,7 +19,6 @@ const Routing = () => {
         <Route path="/login_signup" element={<Login_signup />} />
         <Route path="/mockman" element={<Mockman />} />
       </Routes>
-      {/* </Router> */}
     </>
   );
 };
