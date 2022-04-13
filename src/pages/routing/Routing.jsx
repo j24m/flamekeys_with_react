@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Landing from "../landing_page/Landing.jsx";
 import ProductCategory from "../product_category/Product_category.jsx";
 import Products from "../product_listing_page/Product_listing_page.jsx";
@@ -11,7 +11,7 @@ const Routing = () => {
   return (
     <>
       <Routes>
-        <Route path="/home" element={<Landing />} />
+        <Route path="/" element={<Landing />} />
         <Route path="/productcategory" element={<ProductCategory />} />
         <Route path="/products" element={<Products />} />
         <Route path="/cart" element={<Cart />} />
