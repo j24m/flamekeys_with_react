@@ -52,6 +52,15 @@
   display: block;
 }
 
+.img2-container {
+  height: 32rem;
+  background-color: #514f4f;
+}
+
+.img2-container img {
+  object-fit: cover;
+}
+
 .img2and3-container {
   display: flex;
   flex-direction: column;
